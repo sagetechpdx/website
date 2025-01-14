@@ -53,15 +53,15 @@
     --white: #ffffff;
   }
 
-  /* @layer base {
+  * @layer base {
     * {
       box-sizing: border-box;
-      font-family: "RobotoFlex", sans-serif;
+      font-family: "Oswald;
       scroll-behavior: smooth;
     }
 
     body {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     p {
