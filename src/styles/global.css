@@ -138,10 +138,6 @@
       @apply bg-white text-black transform scale-105;
     }
       
-    .card {
-      @apply drop-shadow: theme('dropShadow.xl');
-    }
-    
     .top-banner {
       @apply w-screen flex flex-row justify-between font-weight:bold bg-dark text-white items-center sticky top-0 z-index:1000 overflow-x-hidden;
     }
