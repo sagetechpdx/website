@@ -159,7 +159,7 @@
     background-color: dark;
     color: dark;
     padding: 0 5px;
-    font-size: clamp(0.75rem, 2vw, 1.5rem);
+    font-size: clamp(0.5rem, 0.7vw + 0.25rem, 0.875rem);
     border-radius: 5px;
     border: none;
     cursor: pointer;
