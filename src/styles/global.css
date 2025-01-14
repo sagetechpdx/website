@@ -18,6 +18,23 @@
     font-style: normal;
     font-display: swap;
   }
+  
+  @font-face {
+  font-family: 'Oswald';
+  src: url('/fonts/oswald/Oswald-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+  
+  @font-face {
+  font-family: 'RobotoFlex';
+  src: url('/fonts/robotoflex/RobotoFlex-VariableFont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+  
 
   .font-outline {
     -webkit-text-stroke: 2.5px black;
