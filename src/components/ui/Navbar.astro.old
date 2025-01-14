@@ -16,6 +16,10 @@ const navButton = { href:'/#contact', label: 'Schedule an appointment' };
 <div class="mt-20">
   <nav class="w-full top-0 left-0 z-50 fixed bg-white">
     <header class="flex flex-col lg:flex-row justify-between items-center my-5 px-6 md:px-32">
+      
+      
+      
+      
       <Astronav>
         <div class="flex w-full lg:w-auto items-center justify-center">
           
