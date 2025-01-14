@@ -6,7 +6,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sagetech.vercel.app",
+  site: "https://website-alpha-gold.vercel.app/",
   integrations: [tailwind()], 
   output: 'server',
   adapter: vercel(),
