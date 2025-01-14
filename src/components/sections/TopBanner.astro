@@ -2,9 +2,9 @@
 import Container from "../ui/container.astro";
 ---
 
-<header class="flex flex-row w-full h-fit justify-evenly bg-dark font-semibold text-white sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)] no-underline">
+<header class="flex flex-row w-full h-fit px-8 justify-evenly bg-dark font-semibold text-white sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)] no-underline">
     {/* Socials */}
-    <div class="flex flex-row justify-evenly px-4 drop-shadow-xl">
+    <div class="flex flex-row justify-evenly px-5">
             <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ import Container from "../ui/container.astro";
     </div>
 
     {/* Email */}
-    <div class="flex flex-row justify-center">        
-        <a href="mailto:info@sagetech.support">
+    <div>        
+        <a class="flex flex-row justify-center px-5" href="mailto:info@sagetech.support">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -57,7 +57,7 @@ import Container from "../ui/container.astro";
 
     {/* Phone */}
     <div>
-        <a class="flex flex-row justify-center" href="tel:5034546438">
+        <a class="flex flex-row justify-center px-5" href="tel:5034546438">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -72,7 +72,7 @@ import Container from "../ui/container.astro";
 
     {/* SMS */}
     <div>
-        <a class="flex flex-row items-center" href="sms:15034546438">
+        <a class="flex flex-row items-center px-5" href="sms:15034546438">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -88,7 +88,7 @@ import Container from "../ui/container.astro";
     </div>
 
     {/* Hours */}
-    <div class="flex flex-row justify-center">
+    <div class="flex flex-row justify-center px-5">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
