@@ -56,12 +56,12 @@
   /* @layer base {
     * {
       box-sizing: border-box;
-      font-family: "Oswald;
+      font-family: "RobotoFlex", sans-serif;
       scroll-behavior: smooth;
     }
 
     body {
-      font-size: 16px;
+      font-size: 20px;
     }
 
     p {
