@@ -22,15 +22,15 @@ const links = [
 {/* Group: Logo, Nav */}
         <div class="flex flex-col md:flex-row gap-2 justify-between">
           {/* Site Logo */}
-            <a class="place-items-start" href="#home">
-            <Image src={Logo} alt="Site Logo" hover:bg-white w-[80px] md:w-[120px] />
+            <a class="hover:bg-white w-[80px] md:w-[120px]" href="#home">
+            <Image src={Logo} alt="Site Logo" />
             </a>
 
 {/* Nav Links */}
           <ul class="flex flex-col sm:flex-row">
             { links.map((link) => { return (
-            <li class="text-center">
-              <a class="hover:underline" href="{link.href}"> {link.name} </a>
+            <li class="hover:underline text-center">
+              <a href="{link.href}"> {link.name} </a>
             </li>
             ); }) }
           </ul>
@@ -94,7 +94,7 @@ const links = [
           </ul>
         </div>
       </div>
-      <div class="flex text-sm justify-center mt-4 text-center md:mt-0">
+      <div class="flex text-xs justify-center mt-4 text-center md:mt-0">
           © 2024 Sage Tech LLC. All rights reserved.
       </div>
     </div>
