@@ -154,12 +154,12 @@
 
 .banner-button {
     display: inline-flex;
-    align-items: center;
+    align-items: left;
     text-decoration: none;
     background-color: dark;
     color: dark;
-    padding: 0px 5px;
-    font-size: 0.85rem;
+    padding: 0 5px;
+    font-size: clamp(0.75rem, 2vw, 1.5rem);
     border-radius: 5px;
     border: none;
     cursor: pointer;
