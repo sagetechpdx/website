@@ -52,12 +52,12 @@ const menuitems = [
     
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg">
-        <img src="/sage_600px.png" width=120 alt="Logo" />  
+        <a href="/">
+        <img class="drop-shadow-xl" src="/sage_600px.png" width=120 alt="Logo" />  
         </a>
       
         <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
+          <MenuIcon class="w-4 h-4 text-dark" />
         </div>
       </div>
       
@@ -79,7 +79,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 items-center text-gray hover:text-gray-900" font-family="Oswald" style="primary">
+                      class="flex lg:px-3 py-2 items-center" style="primary">
                       <span> {item.title}</span>
                     </a>
                   </li>
@@ -89,13 +89,13 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" font-family="Oswald" size="md">Schedule an Appointment</Link>
+          <Link href="#" style="muted" size="md">Schedule an Appointment</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <Link href=" "style="muted" font-family="Oswald" size="md">Schedule an Appointment</Link>
+        <Link href=" "style="muted" size="md">Schedule an Appointment</Link>
       </div>
     </div>
   </header>
