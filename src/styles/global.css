@@ -137,6 +137,11 @@
     .btn-tertiary:hover {
       @apply bg-white text-black transform scale-105;
     }
+      
+    .card {
+      drop-shadow: theme('dropShadow.xl');
+    }
+    
 
     .greenhead {
       @apply bg-green text-black rounded-[7px] px-[7px];
