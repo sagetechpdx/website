@@ -186,10 +186,6 @@
 }
 @layer utilities {
 
-.hidden-on-mobile {
-  invisible md:visible;
-}
-
 .banner-button {
     display: inline-flex;
     align-items: left;
