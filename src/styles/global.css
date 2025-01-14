@@ -139,7 +139,7 @@
     }
       
     .card {
-      drop-shadow: theme('dropShadow.xl');
+      @apply drop-shadow: theme('dropShadow.xl');
     }
     
     .top-banner {
