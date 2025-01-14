@@ -2,10 +2,10 @@
 import Container from "../ui/container.astro";
 ---
 
-<header class="w-full justify-evenly font-bold bg-dark/100 text-white sticky top-0 z-index:100">
+<header class="w-full justify-evenly font-bold bg-dark/100 text-white sticky top-0 z-index:100 font-size: clamp(0.5rem, 0.7vw + 0.25rem, 0.875rem) bg-dark no-underline display: inline-flex align-items: left;">
     {/* Socials */}
-    <div class="flex flex-row">
-            <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9" class="banner-button">
+    <div>
+            <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="1rem"
@@ -45,7 +45,7 @@ import Container from "../ui/container.astro";
 
     {/* Email */}
     <div>        
-        <a href="mailto:info@sagetech.support" class="banner-button">
+        <a href="mailto:info@sagetech.support">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1rem"
@@ -64,7 +64,7 @@ import Container from "../ui/container.astro";
 
     {/* Phone */}
     <div class="flex flex-row">
-        <a href="tel:5034546438" class="banner-button">
+        <a href="tel:5034546438">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1rem"

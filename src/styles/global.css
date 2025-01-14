@@ -185,26 +185,4 @@
   font-weight: bold;
 }
 @layer utilities {
-
-.banner-button {
-    display: inline-flex;
-    align-items: left;
-    text-decoration: none;
-    background-color: dark;
-    color: dark;
-    padding: 0 5px;
-    font-size: clamp(0.5rem, 0.7vw + 0.25rem, 0.875rem);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.banner-button:hover {
-    color: green;
-}
-
-.banner-button svg {
-    margin-right: 10px; /* Adds space between the icon and the text */
-}
 }
