@@ -13,29 +13,47 @@ const links = [
 ---
 
 <section class="sm:px-5">
-  <div class="w-full max-w-[1280px] mx-auto">
+  <div class="no-underline w-full max-w-[1280px] mx-auto">
     <div
       class="px-[15px] bg-dark text-white py-[55px] lg:px-[60px] sm:rounded-t-[45px]"
     >
       <div>
         
-        {/* Group: Logo, Nav, Social Icons */}
-        <div class="flex flex-col lg:flex-row gap-7 items-center justify-between">
+{/* Group: Logo, Nav */}
+        <div class="flex flex-col md:flex-row gap-2 justify-between">
           {/* Site Logo */}
-            <a href="#home">
-            <Image src={Logo} alt="Site Logo" width=150 />
+            <a class="place-items-start" href="#home">
+            <Image src={Logo} alt="Site Logo" hover:bg-white w-100 md:w-150 />
             </a>
 
-          {/* Nav Links */}
-          <ul class="flex flex-col sm:flex-row gap-5">
+{/* Nav Links */}
+          <ul class="flex flex-col sm:flex-row">
             { links.map((link) => { return (
             <li class="text-center">
-              <a class="underline" href="{link.href}"> {link.name} </a>
+              <a class="hover:underline" href="{link.href}"> {link.name} </a>
             </li>
             ); }) }
           </ul>
 
-          {/* Social Media Icons */}
+
+        </div>
+
+{/* Contact Us */}
+        <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
+          <div
+            class="flex text-center lg:text-start flex-col w-full lg:w-[30%]"
+          >
+            <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
+            <div class="flex flex-col justify-between gap-4">
+              <span> Email: info@sagetech.support </span>
+              <span> Phone: (503) 454-6438 </span>
+            </div>
+          </div>
+          <div class="flex-grow my-10 lg:my-0 lg:ml-12">
+            <ShortForm />
+          </div>
+          
+{/* Social Media Icons */}
           <ul class="flex gap-5">
             <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9" class="text-decoration-none">
               <svg
@@ -74,21 +92,6 @@ const links = [
               </svg>
             </a>
           </ul>
-        </div>
-
-        <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
-          <div
-            class="flex text-center lg:text-start flex-col w-full lg:w-[30%]"
-          >
-            <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
-            <div class="flex flex-col justify-between gap-4">
-              <span> Email: info@sagetech.support </span>
-              <span> Phone: (503) 454-6438 </span>
-            </div>
-          </div>
-          <div class="flex-grow my-10 lg:my-0 lg:ml-12">
-            <ShortForm />
-          </div>
         </div>
       </div>
 
