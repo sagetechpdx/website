@@ -50,19 +50,19 @@ const menuitems = [
     
     
     
-    <Astronav class="align-center">
-      <div class="flex justify-between">
+    <Astronav>
+      <div class="flex justify-between align-center">
         <a href="/">
         <img class="w-[100px] md:w-[140px]" src="/sage_dark.png" alt="Logo" />  
         </a>
       
-        <div class="block md:hidden">
+        <div class="block md:hidden align-center justify-end">
           <MenuIcon class="w-8 h-8 text-dark" />
         </div>
       </div>
       
       
-      <MenuItems class="hidden md:w-auto mt-2 md:flex md:mt-0">
+      <MenuItems class="hidden md:w-auto mt-2 md:flex md:mt-0 align-center">
         <ul class="flex flex-col md:flex-row md:gap-8">
           {
             menuitems.map((item, index) => (
