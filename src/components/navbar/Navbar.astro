@@ -45,17 +45,21 @@ const menuitems = [
 ---
 
 <Container>
+  <header class="flex flex-col md:flex-row justify-evenly my-5 max-h-fit">
     
-    <Astronav class="flex flex-col md:flex-row justify-evenly my-5 max-h-fit">
-      <a href="/">
+    
+    
+    
+    <Astronav>
+      <div class="flex justify-between">
+        <a href="/">
         <img class="w-[100px] md:w-[140px]" src="/sage_dark.png" alt="Logo" />  
-      </a>
+        </a>
       
-      
-      <div class="block md:hidden">
+        <div class="block md:hidden">
           <MenuIcon class="w-8 h-8 text-dark" />
+        </div>
       </div>
-
       
       
       <MenuItems class="hidden md:w-auto mt-2 md:flex md:mt-0">
@@ -94,5 +98,5 @@ const menuitems = [
         <Link href=" "style="muted" size="md">Schedule an Appointment</Link>
       </div>
     </div>
-
+  </header>
 </Container>
