@@ -7,7 +7,7 @@ import sms from ../../assets/sms.svg
 import mail from ../../assets/mail.svg
 ---
 
-<header class="flex flex-row w-full h-[30px] justify-evenly align-center gap-5 bg-dark font-semibold text-white sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)] no-underline">
+<header class="flex flex-row w-full h-[35px] justify-evenly align-center gap-5 bg-dark font-semibold text-white sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)] no-underline">
     {/* Socials */}
 
     <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9">
@@ -46,7 +46,7 @@ import mail from ../../assets/mail.svg
     {/* Email */}
     <div>        
         <a class="align-center flex flex-row items-center w-auto gap-2" href="mailto:info@sagetech.support">
-            <Image src={mail} alt="Email Us" />
+            <Image class="w-4" src={mail} alt="Email Us" />
             <div class="hidden md:flex">info@sagetech.support</div>
         </a>
     </div>
@@ -54,7 +54,7 @@ import mail from ../../assets/mail.svg
     {/* Phone */}
     <div>
         <a class="align-center flex flex-row items-center w-auto gap-2" href="tel:5034546438">
-            <Image src={call} alt="Call Us" />
+            <Image class="w-4" src={call} alt="Call Us" />
             <div class="hidden md:flex">(503) 454-6438</div>
         </a>
     </div>
@@ -62,14 +62,14 @@ import mail from ../../assets/mail.svg
     {/* SMS */}
     <div>
         <a class="align-center flex flex-row items-center w-auto gap-2" href="sms:15034546438">
-            <Image src={sms} alt="Text Us" />
+            <Image class="w-4" src={sms} alt="Text Us" />
             <div class="hidden md:flex">(503) 454-6438</div>
         </a>
     </div>
 
     {/* Hours */}
     <div class="align-center flex flex-row items-center w-auto gap-2">
-        <Image src={hours} alt="Our Hours" />
+        <Image class="w-4" src={hours} alt="Our Hours" />
         <div class="hidden md:flex">Monday-Friday 8am-7pm</div>
         <div class="flex md:hidden">M-F 8am-7pm</div>
     </div>
