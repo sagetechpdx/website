@@ -16,7 +16,7 @@ const links = [
   <div class="no-underline w-full max-w-[1280px] mx-auto">
     <div class="px-[15px] bg-dark text-white py-[10px] lg:px-[60px] rounded-t-[45px]">
       <div>
-        {/* Group: Logo, Nav */}
+        {/* GROUP: Logo, Nav */}
         <div class="flex md:flex-row gap-4 justify-between">
           {/* Site Logo */}
           <a class="hover:grayscale-100 w-[160px] md:w-[240px]" href="#home">
@@ -24,7 +24,7 @@ const links = [
           </a>
 
           {/* Nav Links */}
-          <ul class="flex flex-col sm:flex-row justify-evenly px-[40px]">
+          <ul class="flex flex-col sm:flex-row sm:gap-4 justify-evenly px-[20px]">
             { links.map((link) => { return (
             <li class="hover:underline text-center">
               <a href="{link.href}"> {link.name} </a>
@@ -33,14 +33,43 @@ const links = [
           </ul>
         </div>
 
-        {/* Contact Us */}
+        {/* CONTACT US */}
         <div class="flex flex-col lg:flex-row mt-[66px] mb-[51px]">
-          <div class="flex text-center lg:text-start flex-col w-full lg:w-[30%]">
+          <div class="flex flex-col text-center lg:text-start  w-full lg:w-[30%]">
             <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
-            <div class="flex flex-col justify-between gap-4">
-              <span> info@sagetech.support </span>
-              <span> (503) 454-6438 </span>
+            {/* Email */}
+                        
+            <div>
+              <a class="align-center flex flex-row items-center w-auto gap-2" href="mailto:info@sagetech.support">
+                <image class="w-4" src="{mail}" alt="Email Us" />
+                <div class="hidden md:flex">info@sagetech.support</div>
+              </a>
             </div>
+
+            {/* Phone */}
+            <div>
+              <a class="align-center flex flex-row items-center w-auto gap-2" href="tel:5034546438">
+                <image class="w-4" src="{call}" alt="Call Us" />
+                <div class="hidden md:flex">(503) 454-6438</div>
+              </a>
+            </div>
+
+            {/* SMS */}
+            <div>
+              <a class="align-center flex flex-row items-center w-auto gap-2" href="sms:15034546438">
+                <image class="w-4" src="{sms}" alt="Text Us" />
+                <div class="hidden md:flex">(503) 454-6438</div>
+              </a>
+            </div>
+
+            {/* Hours */}
+            <div class="align-center flex flex-row items-center w-auto gap-2">
+              <image class="w-4" src="{hours}" alt="Our Hours" />
+              <div class="hidden md:flex">Monday-Friday 8am-7pm</div>
+              <div class="flex md:hidden">M-F 8am-7pm</div>
+            </div>
+
+            
           </div>
           <div class="flex-grow my-10 lg:my-0 lg:ml-12">
             <ShortForm />
