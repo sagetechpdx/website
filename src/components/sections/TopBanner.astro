@@ -1,28 +1,20 @@
 ---
 import { Image } from "astro:assets";
 import Container from "../ui/container.astro";
-import call from "../../assets/icons/call.png";
-import hours from "../../assets/icons/schedule.png";
-import sms from "../../assets/icons/chat.png";
-import mail from "../../assets/icons/mail.png";
-import facebook from "../../assets/icons/Facebook_Logo_Primary.png";
-import yelp from "../../assets/icons/yelp_burst.png";
-import google from "../../assets/icons/google.png";
-
 ---
 
 <header class="flex flex-row w-full h-[35px] justify-evenly align-center gap-5 bg-dark font-semibold text-white sticky top-0 z-[100] text-[clamp(0.5rem,0.7vw+0.25rem,0.875rem)] no-underline">
     {/* Socials */}
 
           <div class="flex gap-5">
-            <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9" class="text-decoration-none">
+            <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9">
             <img class="w-4" src="/icons/google.png" alt="Our Google Page" /> 
             </a>
             
-            <a href="https://www.yelp.com/biz/sage-tech-portland" class="text-decoration-none">
+            <a href="https://www.yelp.com/biz/sage-tech-portland">
               <img class="w-4" src="/icons/yelp_burst.png" alt="Our Yelp Page" />
             </a>
-            <a href="https://facebook.com/sagetechpdx" class="text-decoration-none">
+            <a href="https://facebook.com/sagetechpdx">
               <img class="w-4" src="/icons/Facebook_Logo_Primary.png" alt="Our Facebook Page" />
             </a>
           </div>
@@ -45,11 +37,12 @@ import google from "../../assets/icons/google.png";
 
     {/* SMS */}
     <div class="align-center items-center">
-        <a class="align-center flex flex-row items-center w-auto gap-2" href="sms:15034546438">
+        <a class="flex flex-row align-center items-center gap-2" href="sms:15034546438">
             <img class="w-4" src="/icons/chat.png" alt="Text Us" />
-            <div class="hidden md:flex">(503) 454-6438</div>
+            <span class="hidden md:flex">(503) 454-6438</span>
         </a>
     </div>
+    
 
     {/* Hours */}
     <div class="align-center flex flex-row items-center w-auto gap-2">
