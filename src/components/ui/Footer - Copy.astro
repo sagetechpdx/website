@@ -2,7 +2,69 @@
 import { Image } from "astro:assets";
 import Logo from "../../assets/sage_600px.png";
 import ShortForm from "../ui/ShortForm.astro";
-import JustNavbar from "/justNavbar.astro";
+
+const links = [
+  { name: "About us", href: "#about" },
+  { name: "Services", href: "#services" },
+  { name: "Use Cases", href: "#cases" },
+  { name: "Pricing", href: "#testimonials" },
+  { name: "Blog", href: "#home" },
+
+
+
+
+
+
+
+
+  {  title: "Home",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },  
+  {
+    title: "Services",
+    path: "#",
+    children: [
+      { title: "Networking", path: "/services/networking" },
+      { title: "Software", path: "/services/software" },
+      { title: "Hardware", path: "/services/hardware" },
+      { title: "Data Recovery", path: "/services/datarecovery" },
+      { title: "Custom-built PCs", path: "/services/custompc" },
+      { title: "Virus Removal", path: "/services/virus" },
+    ],
+  },
+  {
+    title: "Pricing",
+    path: "/pricing",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+  {
+    title: "Remote Support",
+    path: "/remote",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
+  },
+
+
+
+
+];
+
+
+
+
+
+
+
+
 
 ---
 
@@ -16,7 +78,13 @@ import JustNavbar from "/justNavbar.astro";
           <img class="w-[160px] md:w-[240px] hover:grayscale-100" src="/sage_600px.png" alt="Logo"/>
 
           {/* Nav Links */}
-          <JustNavbar />
+          <ul class="flex flex-col sm:flex-row sm:gap-4 justify-evenly px-[20px]">
+            { links.map((link) => { return (
+            <li class="hover:underline text-center">
+              <a href="{link.href}"> {link.name} </a>
+            </li>
+            ); }) }
+          </ul>
         </div>
 
         {/* CONTACT US */}

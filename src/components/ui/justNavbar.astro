@@ -1,0 +1,83 @@
+---
+import Container from "../ui/container.astro";
+import Link from "../ui/link.astro";
+import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+const menuitems = [
+   {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },  
+  {
+    title: "Services",
+    path: "#",
+    children: [
+      { title: "Networking", path: "/services/networking" },
+      { title: "Software", path: "/services/software" },
+      { title: "Hardware", path: "/services/hardware" },
+      { title: "Data Recovery", path: "/services/datarecovery" },
+      { title: "Custom-built PCs", path: "/services/custompc" },
+      { title: "Virus Removal", path: "/services/virus" },
+    ],
+  },
+  {
+    title: "Pricing",
+    path: "/pricing",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+  {
+    title: "Remote Support",
+    path: "/remote",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
+  },
+];
+---
+
+<Container>
+    
+    
+    
+    
+    <Astronav>
+    <MenuItems class="hidden md:w-auto mt-2 md:flex md:mt-0 align-center">
+        <ul class="flex flex-col md:flex-row md:gap-8">
+          {
+            menuitems.map((item, index) => (
+              <>
+                {item.children && (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === menuitems.length - 1}
+                  />
+                )}
+
+                {!item.children && (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex md:px-3 py-2 items-center" style="primary">
+                      <span> {item.title}</span>
+                    </a>
+                  </li>
+                )}
+              </>
+            ))
+          }
+        </ul>
+        
+      </MenuItems>
+    </Astronav>
+    
+</Container>
