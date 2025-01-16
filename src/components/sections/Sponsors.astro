@@ -10,7 +10,7 @@ import s7 from "../../assets/company/b7.png";
 import s8 from "../../assets/company/b8.png";
 import s9 from "../../assets/company/b9.png";
 import s10 from "../../assets/company/b10.png";
-import Section from "./Section.astro";
+
 
 const sponsors = [
   { logo: s6, alt: "Lenovo logo" },
@@ -26,7 +26,7 @@ const sponsors = [
 ];
 ---
 
-<Section id="sponsors">
+<section id="sponsors">
   <div class="max-w-1280">
     {
       sponsors.map((sponsor) => {
@@ -38,4 +38,4 @@ const sponsors = [
       })
     }
   </div>
-</Section>
+</section>
