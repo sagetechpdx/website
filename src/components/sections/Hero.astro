@@ -2,10 +2,10 @@
 import Section from "./Section.astro";
 ---
 
-<section id="hero" class="flex flex-row">
+<section id="hero" class="flex flex-row justify-between align-start">
     <div class="flex flex-column">
-        <h1 class="text-4xl font-medium leading-none md:text-5xl text-center">
-            We take the stress<br />
+        <h1 class="block text-4xl font-medium leading-none md:text-5xl text-center">
+            We take the stress<br/>
             out of tech support
         </h1>
         <p class="font-normal text-center">
@@ -14,16 +14,19 @@ import Section from "./Section.astro";
             earned us a reputation for reliability and trustworthiness, making us the go-to choice for residential and
             small business customers alike.
         </p>
-        <div class="w-full justify-center md:justify-start items-center inline-flex">
-            <a
-                href="/#contact"
-                target="_blank"
-                class="px-8 py-5 bg-dark hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7"
-                >Schedule an appointment
-            </a>
-        </div>
     </div>
     <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <img src="/hero.png" />
+        <img src="/hero.png" class="max-w-[600]px"/>
     </div>
 </section>
+
+{/*
+<div class="w-full justify-center md:justify-start items-center inline-flex">
+    <a
+        href="/#contact"
+        target="_blank"
+        class="px-8 py-5 bg-dark hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7"
+        >Schedule an appointment
+    </a>
+</div>
+*/}
