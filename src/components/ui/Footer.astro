@@ -12,48 +12,43 @@ import JustNavbar from "./justNavbar.astro";
         {/* GROUP: Logo, Nav */}
         <div class="flex md:flex-row gap-4 justify-between">
           {/* Site Logo */}
-          <img class="w-[160px] md:w-[240px] hover:grayscale-100" src="/sage_600px.png" alt="Logo"/>
+          <img class="w-[160px] md:w-[240px] hover:grayscale-100" src="/sage_600px.png" alt="Logo" />
 
- {/* CONTACT US */}
-        <div class="flex flex-col lg:flex-row">
-          <div class="flex flex-col no-underline font-semibold text-center lg:text-start  w-full lg:w-[30%]">
-            <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
-            {/* Email */}
+          {/* CONTACT US */}
+          <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col no-underline font-semibold text-center lg:text-start w-full lg:w-[30%]">
+              <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
+              {/* Email */}
               <a class="align-center flex flex-row items-center w-auto gap-2" href="mailto:info@sagetech.support">
                 <img class="w-4" src="/icons/mail.png" alt="Email Us" />
                 <div class="flex">info@sagetech.support</div>
               </a>
 
-            {/* Phone */}
+              {/* Phone */}
               <a class="align-center flex flex-row items-center w-auto gap-2" href="tel:5034546438">
                 <img class="w-4" src="/icons/call.png" alt="Call Us" />
                 <div class="flex">(503) 454-6438</div>
               </a>
 
-            {/* SMS */}
+              {/* SMS */}
               <a class="align-center flex flex-row items-center w-auto gap-2" href="sms:15034546438">
                 <img class="w-4" src="/icons/chat.png" alt="Text Us" />
                 <div class="flex">(503) 454-6438</div>
               </a>
-            {/* Hours */}
-            <div class="align-center flex flex-row items-center w-auto gap-2">
-              <img class="w-4" src="/icons/schedule.png" alt="Our Hours" />
-              <div class="flex">Monday-Friday 8am-7pm</div>
+              {/* Hours */}
+              <div class="align-center flex flex-row items-center w-auto gap-2">
+                <img class="w-4" src="/icons/schedule.png" alt="Our Hours" />
+                <div class="flex">Monday-Friday 8am-7pm</div>
+              </div>
             </div>
           </div>
-          
-          {/* Nav Links */}
-         
-        </div>
-
-        <JustNavbar />
 
           {/* Social Media Icons */}
           <div class="flex gap-5">
             <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9" class="text-decoration-none">
-            <img class="w-4" src="/icons/google.png" alt="Our Google Page" /> 
+              <img class="w-4" src="/icons/google.png" alt="Our Google Page" />
             </a>
-            
+
             <a href="https://www.yelp.com/biz/sage-tech-portland" class="text-decoration-none">
               <img class="w-4" src="/icons/yelp_burst.png" alt="Our Yelp Page" />
             </a>
@@ -62,6 +57,8 @@ import JustNavbar from "./justNavbar.astro";
             </a>
           </div>
         </div>
+        {/* Nav Links */}
+        <JustNavbar />
       </div>
       <div class="flex text-xs justify-center mt-4 text-center md:mt-0">
         © 2024 Sage Tech LLC. All rights reserved.
