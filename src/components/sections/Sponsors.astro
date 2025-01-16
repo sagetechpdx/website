@@ -27,12 +27,12 @@ const sponsors = [
 ---
 
 <Section id="sponsors">
-  <div class="flex flex-row max-w-1280">
+  <div class="max-w-1280">
     {
       sponsors.map((sponsor) => {
         return (
-          <div class="padding: 5px grayscale transition duration-200 hover:grayscale-0">
-            <Image class="h-[40px] w-auto mx-auto" src={sponsor.logo} alt={sponsor.alt} loading="lazy" />
+          <div class="flex grayscale transition duration-200 hover:grayscale-0">
+            <Image class="flex-auto" src={sponsor.logo} alt={sponsor.alt} loading="lazy" />
           </div>
         );
       })
