@@ -2,13 +2,6 @@
 import { Image } from "astro:assets";
 import Logo from "../../assets/sage_600px.png";
 import ShortForm from "../ui/ShortForm.astro";
-import call from "../../assets/icons/call.png";
-import hours from "../../assets/icons/schedule.png";
-import sms from "../../assets/icons/chat.png";
-import mail from "../../assets/icons/mail.png";
-import facebook from "../../assets/icons/Facebook_Logo_Primary.png";
-import yelp from "../../assets/icons/yelp_burst.png";
-import google from "../../assets/icons/google.png";
 
 const links = [
   { name: "About us", href: "#about" },
@@ -47,7 +40,7 @@ const links = [
             <div>
               <a class="align-center flex flex-row items-center w-auto gap-2" href="mailto:info@sagetech.support">
                 <img class="w-4" src="/icons/mail.png" alt="Email Us" />
-                <div class="hidden md:flex">info@sagetech.support</div>
+                <div class="flex">info@sagetech.support</div>
               </a>
             </div>
 
@@ -55,7 +48,7 @@ const links = [
             <div>
               <a class="align-center flex flex-row items-center w-auto gap-2" href="tel:5034546438">
                 <img class="w-4" src="/icons/call.png" alt="Call Us" />
-                <div class="hidden md:flex">(503) 454-6438</div>
+                <div class="flex">(503) 454-6438</div>
               </a>
             </div>
 
@@ -63,15 +56,14 @@ const links = [
             <div>
               <a class="align-center flex flex-row items-center w-auto gap-2" href="sms:15034546438">
                 <img class="w-4" src="/icons/chat.png" alt="Text Us" />
-                <div class="hidden md:flex">(503) 454-6438</div>
+                <div class="flex">(503) 454-6438</div>
               </a>
             </div>
 
             {/* Hours */}
             <div class="align-center flex flex-row items-center w-auto gap-2">
               <img class="w-4" src="/icons/schedule.png" alt="Our Hours" />
-              <div class="hidden md:flex">Monday-Friday 8am-7pm</div>
-              <div class="flex md:hidden">M-F 8am-7pm</div>
+              <div class="flex">Monday-Friday 8am-7pm</div>
             </div>
 
             
