@@ -35,6 +35,13 @@
   font-display: swap;
 }
   
+a {
+  text-decoration: none;
+}
+  
+a:hover {
+  color: #57cc99;
+}
 
   .font-outline {
     -webkit-text-stroke: 2.5px black;
