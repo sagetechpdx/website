@@ -2,6 +2,7 @@
 import Link from "../ui/link.astro";
 import Dropdown from "../ui/dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Section from "./Section.astro";
 
 const menuitems = [
    {
@@ -44,7 +45,7 @@ const menuitems = [
 ---
 
 
-  <header class="flex flex-col bg-black md:flex-row align-center justify-evenly w-full font-semibold max-h-fit;)">
+  <Section id="header" class="flex flex-col bg-black md:flex-row align-center justify-evenly w-full font-semibold max-h-fit;)">
     
     
     
@@ -97,4 +98,4 @@ const menuitems = [
         <Link href="/#contact" style="muted" class="bg-green text-dark" size="md">Schedule an Appointment</Link>
       </div>
     </div>
-  </header>
+  </Section>

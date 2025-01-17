@@ -11,6 +11,7 @@ import s8 from "../../assets/company/b8.png";
 import s9 from "../../assets/company/b9.png";
 import s10 from "../../assets/company/b10.png";
 
+import Section from "./Section.astro";
 
 const sponsors = [
   { logo: s6, alt: "Lenovo logo" },
@@ -26,7 +27,7 @@ const sponsors = [
 ];
 ---
 
-<section id="sponsors">
+<Section id="sponsors">
   <div class="max-w-1280 flex flex-row">
     {
       sponsors.map((sponsor) => {
@@ -38,4 +39,4 @@ const sponsors = [
       })
     }
   </div>
-</section>
+</Section>
