@@ -10,39 +10,43 @@ import JustNavbar from "./justNavbar.astro";
     <div class="px-[15px] bg-dark text-white py-[10px] lg:px-[60px] rounded-t-[45px]">
       <div>
         {/* GROUP: Logo, Nav */}
-        <div class="flex md:flex-row gap-4 justify-between">
+        <div class="flex  justify-between md:flex-row">
           {/* Site Logo */}
-          <img class="w-[160px] h-[120px] md:w-[240px] md:h-[180px] hover:grayscale-100" src="/sage_600px.png" alt="Logo" />
+          
 
+          <a class="w-1/4">
+
+          <img class="w-[160px] h-[120px] md:w-[240px] md:h-[180px] hover:grayscale-100" src="/sage_600px.png" alt="Logo" />
+        </a>
           {/* CONTACT US */}
-          <div class="flex flex-col">
-            <div class="flex flex-col no-underline font-semibold text-center lg:text-start w-full lg:w-[30%]">
-              <h3 class="mb-5 text-center md:text-left text-2xl text-green">Contact us</h3>
+          <div class="flex flex-col w-1/4">
+            <div class="flex flex-col no-underline font-semibold text-center lg:text-start">
+              <h3 class="py-4 text-center md:text-left text-2xl text-green">Contact us</h3>
               {/* Email */}
-              <a class="align-center flex flex-row items-center w-auto gap-2" href="mailto:info@sagetech.support">
+              <a class="align-center flex flex-row items-center w-auto gap-3" href="mailto:info@sagetech.support">
                 <img class="w-4" src="/icons/mail.png" alt="Email Us" />
                 <div class="flex">info@sagetech.support</div>
               </a>
 
               {/* Phone */}
-              <a class="align-center flex flex-row items-center w-auto gap-2" href="tel:5034546438">
+              <a class="align-center flex flex-row items-center w-auto gap-3" href="tel:5034546438">
                 <img class="w-4" src="/icons/call.png" alt="Call Us" />
                 <div class="flex">(503) 454-6438</div>
               </a>
 
               {/* SMS */}
-              <a class="align-center flex flex-row items-center w-auto gap-2" href="sms:15034546438">
+              <a class="align-center flex flex-row items-center w-auto gap-3" href="sms:15034546438">
                 <img class="w-4" src="/icons/chat.png" alt="Text Us" />
                 <div class="flex">(503) 454-6438</div>
               </a>
               {/* Hours */}
-              <div class="align-center flex flex-row items-center w-auto gap-2">
+              <div class="align-center flex flex-row items-center w-auto gap-3">
                 <img class="w-4" src="/icons/schedule.png" alt="Our Hours" />
                 <div class="flex">Monday-Friday 8am-7pm</div>
               </div>
             </div>
                       {/* Social Media Icons */}
-          <div class="flex gap-5">
+          <div class="flex py-3 gap-5">
             <a href="https://maps.app.goo.gl/8wiPW2HTwWQB3ZQp9" class="text-decoration-none">
               <img class="w-4" src="/icons/google.png" alt="Our Google Page" />
             </a>

@@ -45,57 +45,61 @@ const menuitems = [
 ---
 
 
-  <Section id="header" class="flex flex-col bg-black md:flex-row align-center justify-evenly w-full font-semibold max-h-fit;)">
-    
-    
-    
-    
-    <Astronav>
-      <div class="flex w-auto justify-between align-center">
-        <a href="/">
-        <img class="w-[100px] md:w-[140px]" src="/sage_horizontal.png" alt="Logo" />  
-        </a>
-      
-        <div class="block md:hidden align-center justify-end">
-          <MenuIcon class="w-8 h-8 text-dark" />
-        </div>
-      </div>
-      
-      
-      <MenuItems class="hidden md:w-auto mt-2 text-sm md:flex md:mt-0 align-center">
-        <ul class="flex flex-col md:flex-row md:gap-7">
-          {
-            menuitems.map((item, index) => (
-              <>
-                {item.children && (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                  />
-                )}
+  <Section id="header">
+    <header class="flex flex-col lg:flex-row justify-between items-center my-5">
 
-                {!item.children && (
-                  <li>
-                    <a
-                      href={item.path}
-                      class="flex md:px-3 py-2 items-center" style="primary">
-                      <span> {item.title}</span>
-                    </a>
-                  </li>
-                )}
-              </>
-            ))
-          }
-        </ul>
-        <div class="md:hidden flex items-center mt-3 gap-4">
-          <Link href="/#contact" style="muted" class="bg-green text-dark" size="md">Schedule an Appointment</Link>
+      <Astronav>
+        <div class="flex w-full lg:w-auto items-center justify-between">
+          <a href="/">
+          <img class="w-[120px] md:w-[140px]" src="/sage_horizontal.png" alt="Logo" />
+          
+          </a>
+          <div class="block lg:hidden">
+            <MenuIcon class="w-7 h-7 text-dark" />
+          </div>
         </div>
-      </MenuItems>
-    </Astronav>
-    <div>
-      <div class="hidden md:flex items-center gap-4">
-        <Link href="/#contact" style="muted" class="bg-green text-dark" size="md">Schedule an Appointment</Link>
-      </div>
-    </div>
+        <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+          <ul class="flex flex-col lg:flex-row lg:gap-3">
+            {
+              menuitems.map((item, index) => (
+                <>
+                  {item.children && (
+                    <Dropdown
+                      title={item.title}
+                      children={item.children}
+                      lastItem={index === menuitems.length - 1}
+                    />
+                  )}
+  
+                  {!item.children && (
+                    <li>
+                      <a
+                        href={item.path}
+                        class="flex lg:px-3 py-2 items-center text-black-600 hover:text-gray-900">
+                        <span> {item.title}</span>
+                      </a>
+                    </li>
+                  )}
+                </>
+              ))
+            }
+          </ul>
+          <div class="lg:hidden flex items-center mt-3 gap-4">
+            <Link href="#" style="muted" class="max-w-fit" block size="md">Contact Us</Link>
+          </div>
+        </MenuItems>
+      </Astronav>
+      <div>
+        <div class="hidden lg:flex items-center gap-4">
+          <Link href="#" style="muted" size="md">Contact Us</Link>
+        </div>
+      </div> 
+
+
+
+
+
+
+
+    </header>
   </Section>

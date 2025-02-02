@@ -11,7 +11,7 @@ import Card from "../components/ui/Card.astro";
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Simple, honest pricing model</h2>
                 <p class="mb-5 font-light text-gray-500 sm:text-xl">Here at Sage Tech we take the headache out of booking computer repair with a straightforward approach to pricing.</p>
             </div>
-            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+            <div class="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0">
                 <!-- Pricing Card -->
                 {
                 priceData.map((item) => (
@@ -21,7 +21,7 @@ import Card from "../components/ui/Card.astro";
                     <p class="font-light text-gray-500 sm:text-lg">{item.description}</p>
                     <div class="flex justify-center items-baseline my-8">
                         <span class="mr-2 text-5xl font-extrabold">${item.price}</span>
-                        <span class="text-gray-500">/hour</span>
+
                     </div>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">

@@ -11,7 +11,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        grotesk: ["Grotesk", "sans-serif"],
+        barlow: ["Barlow", "sans-serif"],
+        robotomono: ["RobotoMono", "serif"],
       },
       fontWeight: {
         regular: 400,

@@ -1,0 +1,101 @@
+---
+import Link from "../ui/link.astro";
+import Dropdown from "../ui/dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Section from "./Section.astro";
+
+const menuitems = [
+   {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "/about",
+  },  
+  {
+    title: "Services",
+    path: "#",
+    children: [
+      { title: "Networking", path: "/services/networking" },
+      { title: "Software", path: "/services/software" },
+      { title: "Hardware", path: "/services/hardware" },
+      { title: "Data Recovery", path: "/services/datarecovery" },
+      { title: "Custom-built PCs", path: "/services/custompc" },
+      { title: "Virus Removal", path: "/services/virus" },
+    ],
+  },
+  {
+    title: "Pricing",
+    path: "/pricing",
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+  },
+  {
+    title: "Remote Support",
+    path: "/remote",
+  },
+  {
+    title: "Blog",
+    path: "/blog",
+  },
+];
+---
+
+
+  <Section id="header" class="flex flex-col bg-black md:flex-row align-center justify-evenly w-full font-semibold max-h-fit;)">
+    
+    
+    
+    
+    <Astronav>
+      <div class="flex w-auto justify-between align-center">
+        <a href="/">
+        <img class="w-[100px] md:w-[140px]" src="/sage_horizontal.png" alt="Logo" />  
+        </a>
+      
+        <div class="block md:hidden align-center justify-end">
+          <MenuIcon class="w-8 h-8 text-dark" />
+        </div>
+      </div>
+      
+      
+      <MenuItems class="hidden md:w-auto mt-2 text-sm md:flex md:mt-0 align-center">
+        <ul class="flex flex-col md:flex-row md:gap-7">
+          {
+            menuitems.map((item, index) => (
+              <>
+                {item.children && (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === menuitems.length - 1}
+                  />
+                )}
+
+                {!item.children && (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex md:px-3 py-2 items-center" style="primary">
+                      <span> {item.title}</span>
+                    </a>
+                  </li>
+                )}
+              </>
+            ))
+          }
+        </ul>
+        <div class="md:hidden flex items-center mt-3 gap-4">
+          <Link href="/#contact" style="muted" class="bg-green text-dark" size="md">Schedule an Appointment</Link>
+        </div>
+      </MenuItems>
+    </Astronav>
+    <div>
+      <div class="hidden md:flex items-center gap-4">
+        <Link href="/#contact" style="muted" class="bg-green text-dark" size="md">Schedule an Appointment</Link>
+      </div>
+    </div>
+  </Section>

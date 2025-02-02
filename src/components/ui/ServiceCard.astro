@@ -26,11 +26,11 @@ const { index, titleTop, titleBottom, img, alt, link } = Astro.props;
         >{titleBottom}</span
       >
     </h3>
-    <picture class="w-full h-full row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-end content-start">
+    <picture class="row-span-1 order-1 lg:order-none lg:row-span-2 flex justify-center">
       <Image
         src={img}
         alt={alt}
-        class="w-[80px] md:w-[120px] object-cover drop-shadow-xl"
+        class="w-1/2 h-1/2 drop-shadow-xl"
       />
     </picture>
     <div class="flex items-end">
